@@ -36,7 +36,7 @@ class EdinetDocument(BaseModel):
     legal_status: Optional[str] = Field(None, alias='legalStatus')
     
     class Config:
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 class EdinetStatement(BaseModel):
     """
